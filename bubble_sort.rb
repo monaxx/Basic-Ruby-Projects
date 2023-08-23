@@ -1,7 +1,6 @@
 def bubble_sort(arr_price)
   for i in 0...arr_price.length
-    sliced_array = arr_price.slice(0, arr_price.length - i)
-    for j in 0...(sliced_array.length - 1)
+    for j in 0...(arr_price.length - 1 - i)
       if arr_price[j] > arr_price[j + 1]
         temp = arr_price[j]
         arr_price[j] = arr_price[j + 1]
